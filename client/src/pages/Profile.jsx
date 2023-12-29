@@ -81,11 +81,7 @@ const Profile = () => {
           id="username"
           className="border p-3 rounded-lg"
         />
-        <input
-          type="text"
-          placeholder="username"
-          className="border p-3 rounded-lg"
-        />
+          
 
         <input
           type="email"
