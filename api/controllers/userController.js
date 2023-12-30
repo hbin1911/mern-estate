@@ -1,5 +1,7 @@
 // import { errorHandler } from "../utils/error";
 import bcryptjs from 'bcryptjs';
+import User from '../models/userModel.js';
+import { errorHandler } from '../utils/error.js';
 
 export const test = (req,res)=>{
     res.send('Hello World!!!!!')
@@ -21,7 +23,7 @@ export const updateUser = async(req,res,next)=>{
             }
         }, {new: true})
 
-        const {password, ...rest} = updatedUser._doc
+        const {password, ...rest} = updateUser._doc
         
         res.status(200).json(rest);
     } catch (error) {
