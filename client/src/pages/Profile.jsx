@@ -118,14 +118,8 @@ const Profile = () => {
           className="border p-3 rounded-lg"
           onChange={handleChange}
         />
-        <input
-          type="text"
-          placeholder="username"
-          defaultValue={currentUser.username}
-          id="username"
-          className="border p-3 rounded-lg"
-          onChange={handleChange}
-        />
+        
+     
         <input
           type="email"
           placeholder="email"
